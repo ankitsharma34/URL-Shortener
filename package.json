@@ -8,7 +8,7 @@
     "start":"node app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ankit Sharma",
   "license": "ISC",
   "type": "module"
 }
