@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>URL Shortener</h1>
+        <form id="shorten-form">
+            <div>
+                <label for="url">Enter URL:</label>
+                <input type="url" name="url" id="url" placeholder="https://example.com" required>
+            </div>
+            <div>
+                <label for="shortCode">Enter custom short code (optional):</label>
+                <!-- REMOVED: `required` attribute to make it optional -->
+                <input type="text" name="shortCode" id="shortCode" placeholder="my-custom-link">
+            </div>
+            <button type="submit">Shorten</button>
+        </form>
+
+        <!-- ADDED: A dedicated element for status messages -->
+        <div id="message-area"></div>
+
+        <h2>Your Shortened URLs</h2>
+        <ul id="shortened-urls">
+            <!-- Short URLs will be added here by JavaScript -->
+        </ul>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
